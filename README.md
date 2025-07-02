@@ -63,11 +63,9 @@ The VAE loss function is a combination of two distinct components:
 
     Reconstruction Loss (Binary Cross-Entropy): This loss measures how accurately the decoder reconstructs the original input image. It ensures that the generated images are visually similar to the originals.
 
-    KL Divergence Loss (Regularization): This loss acts as a regularization mechanism. It forces the learned latent distribution to be close to a standard normal distribution (mathcalN(0,1)), creating the smooth and continuous latent space that makes VAEs so powerful. The formula is:
-    $$$$$$L\_{KL} = -0.5 \\cdot \\sum \\left(1 + \\log(\\sigma^2) - \\mu^2 - \\sigma^2\\right) $$
+    KL Divergence Loss (Regularization): This loss acts as a regularization mechanism. It forces the learned latent distribution to be close to a standard normal distribution (mathcalN(0,1)), creating the smooth and continuous latent space that makes VAEs so powerful.
 
-    $$$$
-    $$The total loss is the sum of these two losses.
+    The total loss is the sum of these two losses.
 
 ### Training Process
 
